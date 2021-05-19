@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h2>Result</h2>
+<div class="my-3">
+  <p><strong>ID:</strong> <span th:text="${formModel.id}"></span></p>
+  <p><strong>Title:</strong> <span th:text="${formModel.title}"></span></p>
+  <p><strong>First Name:</strong> <span th:text="${formModel.firstName}"></span></p>
+  <p><strong>Last Name</strong> <span th:text="${formModel.lastName}"></span></p>
+  <p><strong>Launch Date:</strong> <span th:text="${formModel.launchDate}"></span></p>
+</div>
+<a th:href="@{/create}">Add new Human</a>
+
+
+</body>
+</html>
